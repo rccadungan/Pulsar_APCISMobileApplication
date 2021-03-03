@@ -1,5 +1,5 @@
 name: pulsar
-description: A new Flutter project.
+description: Mobile application version of APCIS Online Inquiry.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -21,8 +21,11 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
+  http: ^0.12.2 #Install the Http package
+  shared_preferences:
   flutter:
     sdk: flutter
+    
 
 
   # The following adds the Cupertino Icons font to your application.
@@ -38,7 +41,10 @@ dev_dependencies:
 
 # The following section is specific to Flutter.
 flutter:
-
+  #Add images directory
+  assets:
+  - assets/images/
+  
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
   # the material Icons class.
@@ -74,3 +80,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+
+
