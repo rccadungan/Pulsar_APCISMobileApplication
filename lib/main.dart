@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pulsar/pages/clearance_page.dart';
 import 'package:pulsar/pages/home_page.dart';
 import 'package:pulsar/pages/login_page.dart';
 import 'package:pulsar/services/shared_service.dart';
@@ -32,7 +33,7 @@ class _MyAppState extends State<MyApp> {
           brightness: Brightness.light,
           primaryColor: Color(0xff35438c),
           accentColor: Color(0xffdeac4b)),
-      home: defaultHome,
+      home: Clearance(),
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) => new HomePage(),
         '/login': (BuildContext context) => new LoginPage()
