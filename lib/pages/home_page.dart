@@ -65,7 +65,7 @@ class _HomePageState extends State<HomePage> {
                                     style: TextStyle(
                                       fontSize: 25.0,
                                       fontWeight: FontWeight.w900,
-                                      color: Colors.white,
+                                      color: Color(0xff35438c),
                                     )),
                                 RaisedButton(
                                   color: Color(0xffdeac4b),
