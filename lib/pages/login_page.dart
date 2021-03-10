@@ -56,27 +56,15 @@ class _LoginPageState extends State<LoginPage> {
               Spacer(),
               Align(
                 alignment: Alignment.center,
-                child: Image.asset('assets/images/pulsar_logo.png',
-                    fit: BoxFit.contain, width: 100),
+                child: Image.asset('assets/images/pulsar_logo_icon.png',
+                    fit: BoxFit.contain, width: 180),
               ),
               Spacer()
             ],
           ),
         ),
-        Center(
-          child: Padding(
-            padding: EdgeInsets.only(bottom: 20, top: 10),
-            child: Text(
-              "Log In",
-              style: TextStyle(
-                  fontWeight: FontWeight.bold,
-                  fontSize: 25,
-                  color: Color(0xff35438c)),
-            ),
-          ),
-        ),
         Padding(
-          padding: EdgeInsets.only(bottom: 20, top: 20),
+          padding: EdgeInsets.only(bottom: 20, top: 50),
           child: FormHelper.inputFieldWidget(
             context,
             Icon(Icons.person_rounded),
