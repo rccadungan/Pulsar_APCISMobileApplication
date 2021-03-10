@@ -21,10 +21,12 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  http: ^0.12.2 #Install the Http package
   shared_preferences:
   flutter:
     sdk: flutter
+  bottom_navy_bar: ^5.6.0 #Dependencies package for bottom navigation bar.
+  http: ^0.12.2 #Dependencies package for http.
+  table_calendar: ^2.3.3 #Dependencies package for table calendar.
     
 
 
