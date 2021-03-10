@@ -75,7 +75,7 @@ class _ClearancePageState extends State<ClearancePage> {
           icon: new Icon(Icons.arrow_back_ios),
           color: Color(0xff35438c),
           onPressed: () {
-            Navigator.of(context).pushReplacementNamed('/myAppPage');
+            Navigator.of(context).pushReplacementNamed('/profileScreen');
           },
         ),
       ),
