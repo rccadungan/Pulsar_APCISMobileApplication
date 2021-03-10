@@ -109,39 +109,60 @@ class _LoginPageState extends State<LoginPage> {
         SizedBox(
           height: 20,
         ),
-        new Center(
-          child: FormHelper.saveButton(
-            "Log In",
-            () {
-              if (validateAndSave()) {
-                print("Username : $username");
-                print("Password : $password");
-
-                setState(() {
-                  this.isAPICallProcess = true;
-                });
-
-                APIServices.loginCustomer(username, password).then((response) {
-                  setState(() {
-                    this.isAPICallProcess = false;
-                  });
-                  if (response) {
-                    globalFormKey.currentState.reset();
-                    Navigator.of(context).pushReplacementNamed('/home');
-                  } else {
-                    FormHelper.showMessage(
-                        context,
-                        'Log In',
-                        'Invalid Username or Password. \nUse your APC acount credentials.',
-                        'Ok', () {
-                      Navigator.of(context).pop();
-                    });
-                  }
-                });
-              }
-            },
+        SizedBox(
+          width: 350,
+          height: 50,
+          child: Center(
+            child: RaisedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed('/myAppPage');
+              },
+              child: Text(
+                'Log In',
+                style: TextStyle(fontSize: 20),
+              ),
+              color: Color(0xff35438c),
+              textColor: Colors.white,
+              elevation: 10,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+            ),
           ),
         ),
+        // new Center(
+        //   child: FormHelper.saveButton(
+        //     "Log In",
+        //     () {
+        //       if (validateAndSave()) {
+        //         print("Username : $username");
+        //         print("Password : $password");
+
+        //         setState(() {
+        //           this.isAPICallProcess = true;
+        //         });
+
+        //         APIServices.loginCustomer(username, password).then((response) {
+        //           setState(() {
+        //             this.isAPICallProcess = false;
+        //           });
+        //           if (response) {
+        //             globalFormKey.currentState.reset();
+        //             Navigator.of(context).pushReplacementNamed('/home');
+        //           } else {
+        //             FormHelper.showMessage(
+        //                 context,
+        //                 'Log In',
+        //                 'Invalid Username or Password. \nUse your APC acount credentials.',
+        //                 'Ok', () {
+        //               Navigator.of(context).pop();
+        //             });
+        //           }
+        //         });
+        //       }
+        //     },
+        //   ),
+        // ),
       ],
     );
   }
