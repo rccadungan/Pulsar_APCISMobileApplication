@@ -163,7 +163,7 @@ class _ClearancePageState extends State<ClearancePage> {
                       overflow: TextOverflow.ellipsis,
                       style: TextStyle(color: Colors.grey, fontSize: 13),
                     ),
-                  )
+                  ),
                 ],
               ),
             ],
