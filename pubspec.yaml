@@ -27,6 +27,7 @@ dependencies:
   bottom_navy_bar: ^5.6.0 #Dependencies package for bottom navigation bar.
   http: ^0.12.2 #Dependencies package for http.
   table_calendar: ^2.3.3 #Dependencies package for table calendar.
+  pin_entry_text_field: 0.1.4 #Dependencies for OTP screen. 
     
 
 
